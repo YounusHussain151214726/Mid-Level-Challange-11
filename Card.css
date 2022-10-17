@@ -1,0 +1,180 @@
+:roots {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+html {
+  font-size: 72.5%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.Container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gridContainer {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+}
+
+.box1 {
+  width: 100%;
+  align-self: center;
+  text-align: left;
+  padding: 1rem 1rem;
+  border-top: 3px solid cyan;
+
+  margin-left: 1rem;
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+.box1 h4 {
+  font-size: 1.6rem;
+}
+
+.box1 p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.box1 img {
+  width: 3rem;
+  float: right;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+.boxs {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.box3,
+.box2 {
+  width: 100%;
+  text-align: left;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+.box2 {
+  border-top-color: var(--Red);
+  border-top: 3px solid orange;
+}
+.box3 {
+  border-top: 3px solid blue;
+}
+
+.box2 h4 {
+  font-size: 1.6rem;
+}
+
+.box2 p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.box2 img {
+  width: 3rem;
+  float: right;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+.box3 h4 {
+  font-size: 1.6rem;
+}
+
+.box3 p {
+  font-size: 1.2rem;
+}
+
+.box3 img {
+  width: 3rem;
+  float: right;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+.box4 {
+  width: 100%;
+  align-self: center;
+  text-align: left;
+
+  border-top: 3px solid red;
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+.content {
+  padding: 2rem 2rem;
+}
+.content h3 {
+  font-size: 1.8rem;
+  color: rgb(186, 181, 181);
+}
+
+.content h2 {
+  font-size: 2rem;
+}
+.content p {
+  font-size: 1.4rem;
+  padding: 2rem 2rem;
+}
+
+.box4 h4 {
+  font-size: 1.6rem;
+}
+
+.box4 p {
+  font-size: 1.2rem;
+}
+
+.box4 img {
+  width: 3rem;
+  float: right;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+/* @media only screen and (min-width:360px)and(max-width:900px){
+  
+  .gridContainer {
+    flex-direction: column;
+    background-color: red;
+  }
+} */
+
+@media only screen and (min-width: 360px) and (max-width: 900px) {
+  .gridContainer {
+    flex-direction: column;
+  }
+  .box1,
+  .box4 {
+    margin: 1rem 0;
+  }
+  .boxs {
+    margin: 0 0;
+  }
+}
