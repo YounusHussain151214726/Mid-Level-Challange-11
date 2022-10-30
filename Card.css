@@ -11,20 +11,25 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   text-align: center;
 }
 
 html {
   font-size: 72.5%;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .Container {
   max-width: 1110px;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
 
 .gridContainer {
@@ -167,6 +172,9 @@ html {
 } */
 
 @media only screen and (min-width: 360px) and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+  }
   .gridContainer {
     flex-direction: column;
   }
